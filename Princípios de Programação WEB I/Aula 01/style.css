@@ -1,0 +1,57 @@
+h1{
+    color: rgba(0, 0, 255, 0.5);/*rgb*/
+}
+h2{
+    color: #ff0; /*hexadecimal*/
+}
+p{
+    color: red; /*nominal*/
+}
+
+#paragrafo-principal{
+    color: violet;
+}
+
+p > b{ /*só seleciona se b for filho direto de p*/
+    color: blue;
+}
+ p.equacoes{
+    border: solid 1px black;
+    width: 70px;
+    padding: 2px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+}
+/*
+p~p{ aplica em todos parágrafos que vem depois do primeiro *//*
+    background-color: aquamarine;
+}*/
+
+/*coloca fundo amarelo nos paragrafos pares e verde nos impares*/
+.paragrafo-alternado:nth-of-type(2n-1){
+    background-color: green;
+}
+
+.paragrafo-alternado:nth-of-type(2n){
+    background-color: yellow;
+}
+
+/*executa o último*/
+body{
+    background-color: chocolate;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+/*executa o que tiver o atributo important*/
+body{
+    background-color: chocolate !important;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
