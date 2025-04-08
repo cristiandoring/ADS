@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h2>Formulário de Contato</h2>
+        <form action="processa.php" method="POST">
+          
+          <label>Nome:
+            <br>
+          <input type="text" id="nome" name="nome" >
+          <br>
+          <br>
+          </label>
+          <label for="email">E-mail:</label><br>
+          <input type="email" id="email" name="email" ><br><br>
+          
+          <label>
+            Tipo de mensagem
+            <br>
+          <select id="tipo" name="tipo">
+            <option value="duvida">Dúvida</option>
+            <option value="sugestao">Sugestão</option>
+            <option value="elogio">Elogio</option>
+          </select><br><br>
+          <label/>
+          
+          <label>
+            Mensagem
+            <br>
+          <textarea id="mensagem" name="mensagem" rows="6" cols="40" ></textarea><br><br>
+          </label>
+          <button type="submit">Enviar</button>
+          
+        </form>
+      </section>
+
+
+      <section>
+        <h2>Informações Adicionais</h2>
+      
+        <form action="processa.php" method="POST">
+          
+          <fieldset>
+            <legend>Qual seu nível de conhecimento em HTML?</legend>
+            
+            <label>
+              <input type="radio" name="nivel_html" value="iniciante" required>
+              Iniciante
+            </label><br>
+            
+            <label>
+              <input type="radio" name="nivel_html" value="intermediario">
+              Intermediário
+            </label><br>
+            
+            <label>
+              <input type="radio" name="nivel_html" value="avancado">
+              Avançado
+            </label>
+          </fieldset><br>
+      
+          <fieldset>
+            <legend>Preferências</legend>
+            
+            <label>
+              <input type="checkbox" name="preferencias[]" value="novidades">
+              Quero receber novidades por e-mail
+            </label><br>
+            
+            <label>
+              <input type="checkbox" name="preferencias[]" value="testes-beta">
+              Desejo participar de testes beta
+            </label><br>
+            
+            <label>
+              <input type="checkbox" name="preferencias[]" value="autorizacao-dados">
+              Autorizo o uso dos dados
+            </label>
+          </fieldset><br>
+      
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+      
+      
+</body>
+</html>
